@@ -6,13 +6,13 @@
 
 # Index
     - [ ] Navigation bar
-      - Flexbox
-      - Drop Down Menu
-      - Page Title
-      - User Section
-        - User's Display Name
-        - User's Name
-        - User's Profile Picture
+      - Flexbox DONE
+      - Drop Down Menu **WIP**
+      - Page Title DONE
+      - User Section DONE
+        - User's Display Name DONE
+        - User's Name DONE
+        - User's Profile Picture DONE
 
       - [ ] Content Section
         - Display Example Block
