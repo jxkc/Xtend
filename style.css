@@ -1,11 +1,11 @@
 .Header-Bar {
     display: flex;
     flex-direction: row;
+    width: 100%;
     align-items: center;
 }
 
 .Header-Bar div {
-    margin: 10px;
     padding: 20px;
     font-size: 20px;
 }
@@ -16,13 +16,35 @@
     margin: auto;
 }
 
+.Header-Bar .User {
+    display: flex;
+}
 
+.Header-Bar .User img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+.Header-Bar .User p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Header-Bar .User .UserInfo {
+    float: left;
+    font-size: 14px;
+    padding-right: 5px;
+    margin: auto;
+}
 
 /*Dropdown Button*/
 .Drop-Button {
-    background-color: lightcoral;
+    background-color: coral;
     color: white;
     padding: 16px;
+    margin-left: 0px;
     font-size: 16px;
     border: none;
 }
@@ -31,6 +53,7 @@
 .Dropdown {
     position: relative;
     display: inline-block;
+    background-color: coral;
 }
 
 /*Dropdown Content (Hidden)*/
@@ -50,11 +73,20 @@
     display: block;
 }
 
+.Drop-Button {
+    width: 100px;
+    height: 100px;
+}
+
 /*Change colour of Dropdown links on hover*/
-.Drop-Content a:hover {background-color: rgb(255, 216, 213)}
+.Drop-Content a:hover {background-color: coral;}
 
 /*Change colour of menu on hover*/
 .Dropdown:hover .Drop-Content {display: block}
 
 /*Change the background colour of the button when content is shown*/
-.Dropdown:hover .Drop-Button {background-color: thistle}
+.Dropdown:hover .Drop-Button {background-color: coral;}
+
+body {
+    margin: 0;
+}
