@@ -39,8 +39,63 @@
         </div>
     </div>
 
+    <style>
+        .Content {
+            display: flex;
+            flex-direction: row;
+            
+            margin: 10px;
+        }
+
+        .Content div {
+            margin: 5px;
+        }
+
+        .Content img{
+            width: 200px;
+            height: 200px;
+        }
+
+        .Content p {
+            width: 200px;
+            height: 200px;
+
+            overflow: scroll;
+            text-overflow: clip;
+
+            font-size: 12px;
+            padding-left: 3px;
+            padding-right: 3px;
+            margin: 0;
+        }
+
+        .Content #PlaceHolder {
+            width: 200px;
+            height: 400px;
+            background-color: grey;
+        }
+
+        .Content #PlaceHolder2 {
+            width: 200px;
+            height: 400px;
+            background-color: grey;
+        }
+    </style>
+
     <div class="Content">
-        <p>Place Holder Text.</p>
+        <div id="PlaceHolder">
+            <img src="./Images/Xtend_NoImage.png">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos minima eum quasi ad soluta, accusantium qui eveniet, consectetur hic voluptatem temporibus nam alias repudiandae voluptas voluptate cumque ipsam distinctio?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos minima eum quasi ad soluta, accusantium qui eveniet, consectetur hic voluptatem temporibus nam alias repudiandae voluptas voluptate cumque ipsam distinctio?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos minima eum quasi ad soluta, accusantium qui eveniet, consectetur hic voluptatem temporibus nam alias repudiandae voluptas voluptate cumque ipsam distinctio?
+            </p>
+        </div>
+
+        <div id="PlaceHolder2">
+            <img src="./Images/Xtend_NoImage.png">
+            <p>Place Holder Text</p>
+        </div>
     </div>
     <!--Content HTML-->
 </body>
