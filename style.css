@@ -9,7 +9,7 @@
 }
 
 .Header-Bar {
-    display: flex;
+    display: block;
     flex-direction: row;
     width: 100%;
     align-items: center;
@@ -26,20 +26,22 @@
 }
 
 .Header-Bar .User {
-    display: flex;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .Header-Bar .User img {
     padding: 10px;
     width: 80px;
     height: 80px;
-    margin: auto;
-    display: block;
 }
 
 .Header-Bar .User p {
     margin-top: 0;
     margin-bottom: 0;
+    vertical-align: middle;
+    line-height: 1;
 }
 
 .Header-Bar .User .UserInfo {
@@ -48,8 +50,6 @@
     padding-right: 5px;
     margin: auto;
 }
-
-
 
 .Header-Bar .Drop-Button {
     background-color: transparent;

@@ -17,5 +17,4 @@
         - Display Example Block
         - Test 'Create Block'
 
-    - [ ] Need to make a way to support mobile layouts before continuing with my other stuff
-    - [ ] 
+  - Make page responsive.
