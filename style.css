@@ -94,34 +94,29 @@
 */
 
 /*STYLING FOR THE USERNAME + PFP AREA*/
-.User{
+.User{ /*displays content, aligns to center*/
     display: flex;
     align-items: center;
 }
 
-.User ul {
-    float: left;
-}
-
-.User p {
+.User p { /*Makes sure paras stay close together*/
     margin: 0;
 }
 
-
-.User #DisplayName{
+.User #DisplayName{ /*Username*/
     color: black;
     font-family: Noto-Sans-Regular;
 }
 
-.User #Indentity {
+.User #Indentity { /*ID, how I can find the user maybe*/
     color: blue;
     font-family: Noto-Sans-Italic;
 }
 
-.User img {
+.User img { /*CSS for the image, to keep it small and with the user*/
     padding: 10px;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     float: right;
 }
 /*End of Styling for the User*/
