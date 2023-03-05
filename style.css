@@ -103,20 +103,6 @@ body {
     box-sizing: border-box      ;
 }
 
-@media (max-width: 800px) {
-    .Dropdown {
-
-    }
-
-    .Header-Title {
-        
-    }
-
-    .User {
-        
-    }
-}
-
 /*END OF STYLING FOR WHOLE PAGE*/
 
 /*STYLING FOR HEADER BAR*/
