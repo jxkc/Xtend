@@ -93,6 +93,95 @@
 }
 */
 
+/*STYLING FOR WHOLE PAGE*/
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box      ;
+}
+
+@media (max-width: 800px) {
+    .Dropdown {
+
+    }
+
+    .Header-Title {
+        
+    }
+
+    .User {
+        
+    }
+}
+
+/*END OF STYLING FOR WHOLE PAGE*/
+
+/*STYLING FOR HEADER BAR*/
+
+.Header-Bar { /*How the header bar is styled*/
+    display: flex;
+    flex-direction: row;
+    flex-grow: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background-color: darkgray;
+}
+
+.Header-Title {
+    float: left;
+    text-align: center;
+    margin: auto;
+    flex: auto;
+    padding: 20px;
+}
+
+/*END OF STYLING */
+
+/*STYLING FOR THE DROPDOWN MENU*/
+
+.Dropdown { /*Styling for where the button should be placed*/
+    float: left;
+    padding: 20px;
+    font-family: Noto-Sans-Regular;
+}
+
+.Drop-Button { /*Styling of the button*/
+    background-color: RED;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    min-width: 80px;
+}
+
+.Drop-Content { /*Styling for contents of dropdown*/
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    max-width: 80px;
+    z-index: 1;
+}
+
+.Drop-Content a { /*Styling for links*/
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.Drop-Content a:hover {background-color: antiquewhite;} /*What colour the content should be when hovered over*/
+
+.Dropdown:hover .Drop-Content {display: block;} /*Display content when menu is hovered over*/
+
+.Dropdown:hover .Drop-Button {background-color: beige;} /*Changes colour of button when hovered over*/
+
+/*END OF STYLING FOR THE DROPDOWN MENU*/
+
 /*STYLING FOR THE USERNAME + PFP AREA*/
 .User{ /*displays content, aligns to center*/
     display: flex;
