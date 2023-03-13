@@ -19,7 +19,7 @@
 // Requires a number to be passed in to determine the length required.
 function UniqueID(length) {
     var result = '';
-    
+
     //characters defines the characters being used for the String
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     //const charactersLength = characters.length;
@@ -32,6 +32,37 @@ function UniqueID(length) {
     }
     //returning the result.
     return result;
+};
+
+// Function to create a 'Block' with a text and image and UniqueID
+// Function passes blockText and imageSource
+function GenerateBlock(blockText, imageSource){
+    //Block is a div and has a unqiue ID.
+    let block = document.createElement('div');
+    let container;
+    block.id = UniqueID(8);
+
+    //if no image source, set to a default image.
+    if(imageSource == "" || imageSource == " ")
+        imageSource = './Images/Xtend_NoImage.png'
+
+    
+    // Sets the HTML components we want in a block.
+    // CSS is dealt with in style.css
+    block.innerHTML = `
+        <img src="${imageSource}">
+        <p>${blockText}</p>
+    `;
+
+    // Finds the ID where we want to put all these different Blocks
+    // Adds the Block.
+    container = document.getElementById('Blocks');
+    container.appendChild(block);
 }
-;
-console.log(UniqueID(8));
+
+//Just a test for creating a few blocks!
+for(var i = 0; i < 9; i++){
+    GenerateBlock("Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex voluptatum quo tempore sequi numquam consectetur, unde ad rerum, ipsam quae sint sed a molestiae laboriosam eos temporibus deleniti. Facilis."
++ "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex voluptatum quo tempore sequi numquam consectetur, unde ad rerum, ipsam quae sint sed a molestiae laboriosam eos temporibus deleniti. Facilis."
+, " ");
+}

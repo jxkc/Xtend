@@ -196,3 +196,41 @@ body {
     float: right;
 }
 /*End of Styling for the User*/
+
+/*Start of Styling for the Content*/
+
+.Content #Blocks {
+    display: flex;
+    flex: auto;
+    float: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Content #Blocks div{
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+}
+
+.Content #Blocks p {
+    width: 200px;
+    height: 190px;
+
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    
+    font-size: 16px;
+    
+    margin: 0;
+}
+
+.Content #Blocks img {
+    width: 200px;
+    height: 200px;
+
+    margin: 0;
+}
+
+/*End of Styling for Content*/
+
