@@ -23,3 +23,9 @@ once all the 'Header-Bar' styling is done I am
 going to work on actually implementing some features...
 
 It's supposed to all be "design" at the moment which is fine but I want to add some actual features.
+
+12/3/23
+
+I am now adding in one of the main features, the content blocks. This is going to be the main focus of the website and hopefully it shouldn't look too messed up. At least, I hope it looks alright.
+
+I've made comments on what needs to be added and I believe I have the script somewhere so I am going to go ahead and find that and start actually developing what I need to develop.
