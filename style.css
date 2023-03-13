@@ -201,7 +201,6 @@ body {
 
 .Content #Blocks {
     display: flex;
-    flex: auto;
     float: left;
     flex-direction: row;
     flex-wrap: wrap;
@@ -211,6 +210,8 @@ body {
     width: 200px;
     height: 400px;
     margin: 20px;
+
+    background-color: grey;
 }
 
 .Content #Blocks p {
