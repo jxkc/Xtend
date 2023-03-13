@@ -16,3 +16,25 @@
         - Text String
         - Unique ID.
 */
+
+// Function to generate a Unique String from a selection of Upper and lower case letters and numbers.
+// Requires a number to be passed in to determine the length required.
+function UniqueID(length: number): string {
+    let result: string = '';
+
+    //characters defines the characters being used for the String
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    //const charactersLength = characters.length;
+
+    let counter: number = 0;
+
+    // While the counter is less than the length
+    //  Iterate through loop adding random chars to the result.
+    while(counter < length){
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+        counter += 1;
+    }
+
+    //returning the result.
+    return result;
+};
