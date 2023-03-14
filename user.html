@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./Scripts/XBlock.js"></script>
+    <script type="module" src="./Scripts/Users.js"></script>
     <title>Xtend - User</title>
 </head>
 <body>
@@ -27,13 +29,33 @@
             </div>
     
             <!--User's Information Displayed-->
-            <div class="User">
+            <!--Want to add a way for User to login and display their details...-->
+            <div id="User">
                     <ul>
                         <p id="DisplayName">JackJeff</p>
-                        <a href="home.html"><p id="Indentity">@jj_jeff13</p></a>
+                        <a href="user.html"><p id="Indentity">@jj_jeff13</p></a>
                     </ul>
                 <img src="./Images/ChopperTest.jpg">
             </div>
+    </div>
+    
+    <!-- The User Section-->
+    <div class="UserPage">
+
+        <div class="UserInfo">
+            <img src="./Images/ChopperTest.jpg">
+            <!--Fetch User information-->
+            <ul>
+                <p id="DisplayName">JackJeff</p>
+                <p id="Indentity">@jj_jeff13</p>
+            </ul>
+            
         </div>
+        <div class="UserContent">
+            <div id="Blocks"></div>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
