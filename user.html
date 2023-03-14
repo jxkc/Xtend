@@ -13,9 +13,19 @@
     <!--The Header Bar for Website-->  
     <div class="Header-Bar">
         <!--Dropdown Element for Header Bar HTML-->
+        <script>
+            function displayMenu() {
+                var x = document.getElementById("Drop-Content");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
             <div class="Dropdown">
-                <button class="Drop-Button">Menu</button>
-                <div class="Drop-Content">
+                <button class="Drop-Button" onclick="displayMenu()">Menu</button>
+                <div id="Drop-Content">
                     <a href="home.html">Home</a>
                     <a href="#">Market</a>
                     <a href="#">Help</a>
@@ -49,6 +59,7 @@
                 <p id="DisplayName">JackJeff</p>
                 <p id="Indentity">@jj_jeff13</p>
             </ul>
+            <button><p>Settings</p></button>
             
         </div>
         <div class="UserContent">

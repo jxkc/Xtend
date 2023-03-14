@@ -37,7 +37,6 @@ body {
     text-align: center;
     margin: auto;
     flex: auto;
-    padding: 20px;
     font-family: Noto-Sans-Regular;
 }
 
@@ -56,7 +55,6 @@ body {
 .Drop-Button { 
     background-color:  	#FFBF00;
     color: black;
-    padding: 16px;
     font-size: 16px;
     border: none;
     min-width: 80px;
@@ -65,7 +63,7 @@ body {
 }
 
 /*Styling for contents of dropdown*/
-.Drop-Content { 
+#Drop-Content { 
     display: none;
     position: absolute;
     background-color: #FFFF8F;
@@ -74,7 +72,7 @@ body {
 }
 
 /*Styling for links*/
-.Drop-Content a { 
+#Drop-Content a { 
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -82,11 +80,11 @@ body {
     text-align: center;
 }
 
-.Drop-Content a:hover {background-color: orange;
+#Drop-Content a:hover {background-color: orange;
     transition: all ease-in-out 0.3s;
 } /*What colour the content should be when hovered over*/
 
-.Dropdown:hover .Drop-Content {display: block;
+.Dropdown:hover #Drop-Content {display: block;
 } /*Display content when menu is hovered over*/
 
 
@@ -115,6 +113,10 @@ body {
     font-family: Noto-Sans-Italic;
 }
 
+#User ul {
+    padding-left: 5px;
+}
+
 #User img { /*CSS for the image, to keep it small and with the user*/
     padding: 10px;
     width: 60px;
@@ -136,7 +138,6 @@ body {
     width: 200px;
     height: 400px;
     margin: min(10px) auto;
-
     background-color: grey;
 }
 
@@ -167,8 +168,10 @@ body {
     display: flex;
     align-items: center;
     background-color: #FDFD96;
-
+    flex-wrap: wrap;
     font-family: Noto-Sans-Regular;
+    align-items: center;
+    text-align: center;
 }
 
 .UserInfo #Indentity{
@@ -194,8 +197,8 @@ body {
 }
 
 .UserInfo img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     float: left;
     border-radius: 5em;
     transition: all ease-in-out 1s;
@@ -203,14 +206,24 @@ body {
     margin-right: 0;
 }
 .UserInfo p {
-    font-size: 40px;
+    font-size: 28px;
     margin: 0;
 }
 
 .UserInfo ul {
-    padding-left: 10px;
+    padding-left: min(20px) auto;
 }
 
+.UserInfo button {
+    margin: auto;
+
+    background-color:  	#FFBF00;
+    color: black;
+    font-size: 16px;
+    border: none;
+    min-width: 80px;
+    height: 90px;
+}
 /*End of Styling for the User Info*/
 
 /*Start of Styling for the User Content*/
@@ -225,8 +238,9 @@ body {
 .UserContent #Blocks div{
     width: 200px;
     height: 400px;
-    margin: min(10px) auto;
-
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
     background-color: grey;
 }
 
