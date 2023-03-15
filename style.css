@@ -206,7 +206,7 @@ body {
     margin-right: 0;
 }
 .UserInfo p {
-    font-size: 28px;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -216,13 +216,14 @@ body {
 
 .UserInfo button {
     margin: auto;
-
+    margin-right: 5px;
     background-color:  	#FFBF00;
     color: black;
     font-size: 16px;
     border: none;
     min-width: 80px;
     height: 90px;
+    align-items: center;
 }
 /*End of Styling for the User Info*/
 
