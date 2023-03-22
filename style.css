@@ -67,7 +67,8 @@ body {
 .Content #Blocks div{
     width: 200px;
     height: 400px;
-    margin: min(10px) auto;
+    /*Can't get this working right at the moment. Can't be bothered at the moment.*/
+    margin: 1vw auto;
     background-color: grey;
 }
 
