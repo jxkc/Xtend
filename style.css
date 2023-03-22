@@ -1,131 +1,61 @@
+/*Add Font*/
 @font-face {
     font-family: Noto-Sans-Regular;
     src: url(./Fonts/NotoSans-Regular.ttf);
 }
 
-@font-face {
-    font-family: Noto-Sans-Italic;
-    src: url(./Fonts/NotoSans-Italic.ttf);
-}
 
-/*STYLING FOR WHOLE PAGE*/
+* {
+    font-family: Noto-Sans-Regular;
+}
 
 body {
     margin: 0;
+    padding: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-/*END OF STYLING FOR WHOLE PAGE*/
-
-/*STYLING FOR HEADER BAR*/
-
-.Header-Bar { /*How the header bar is styled*/
+#homeheader {
     display: flex;
     flex-direction: row;
-    flex-grow: 100%;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-
-    background-color: #FDDA0D;
-}
-
-.Header-Title {
-    float: left;
-    text-align: center;
-    margin: auto;
-    flex: auto;
-    font-family: Noto-Sans-Regular;
-}
-
-/*END OF STYLING */
-
-/*STYLING FOR THE DROPDOWN MENU*/
-
-/*Styling for where the button should be placed*/
-.Dropdown { 
-    float: left;
-    padding: 20px;
-    font-family: Noto-Sans-Regular;
-}
-
-/*Styling of the button*/
-.Drop-Button { 
-    background-color:  	#FFBF00;
-    color: black;
-    font-size: 16px;
-    border: none;
-    min-width: 80px;
-    width: 80px;
-    height: 80px;
-}
-
-/*Styling for contents of dropdown*/
-#Drop-Content { 
-    display: none;
-    position: absolute;
-    background-color: #FFFF8F;
-    max-width: 80px;
-    z-index: 1;
-}
-
-/*Styling for links*/
-#Drop-Content a { 
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-#Drop-Content a:hover {background-color: orange;
-    transition: all ease-in-out 0.3s;
-} /*What colour the content should be when hovered over*/
-
-.Dropdown:hover #Drop-Content {display: block;
-} /*Display content when menu is hovered over*/
-
-
-/*Changes colour of button when hovered over*/
-.Dropdown:hover .Drop-Button {background-color: #FFFF8F;} 
-
-/*END OF STYLING FOR THE DROPDOWN MENU*/
-
-/*STYLING FOR THE USERNAME + PFP AREA*/
-#User{ /*displays content, aligns to center*/
-    display: flex;
-    align-items: center;
-}
-
-#User p { /*Makes sure paras stay close together*/
     margin: 0;
+    margin-bottom: 0px;
+    
+    color: white;
+    background-color: rgb(215, 63, 63);
+    font-size: calc(10vw + 0.5rem);
 }
 
-#User #DisplayName{ /*Username*/
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 89);
+}
+
+#navbar ul {
+    padding: 0;
+}
+
+#navbar a {
     color: black;
-    font-family: Noto-Sans-Regular;
+    text-decoration: none;
+    font-size: calc(3vw + .5rem);
+    padding: 2vw;
+    padding-bottom: 0;
+    border-bottom: 1px solid none;
 }
 
-#User #Indentity { /*ID, how I can find the user maybe*/
-    color: blue;
-    font-family: Noto-Sans-Italic;
+#navbar a {
+    transition: all ease-in-out 0.5s;
 }
 
-#User ul {
-    padding-left: 5px;
+#navbar a:hover {
+    
+    border-bottom: 3px solid red;
+    transition: all ease-in-out 0.3s;
 }
-
-#User img { /*CSS for the image, to keep it small and with the user*/
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    float: right;
-}
-/*End of Styling for the User*/
-
-/*Start of Styling for the Content*/
 
 .Content #Blocks {
     display: flex;
@@ -159,108 +89,3 @@ body {
 
     margin: 0;
 }
-
-/*End of Styling for Content*/
-
-/*Start of Styling for the User Info*/
-
-.UserInfo {
-    display: flex;
-    align-items: center;
-    background-color: #FDFD96;
-    flex-wrap: wrap;
-    font-family: Noto-Sans-Regular;
-    align-items: center;
-    text-align: center;
-}
-
-.UserInfo #Indentity{
-    color: gray;
-}
-.UserInfo img {
-    width: 200px;
-    height: 200px;
-    float: left;
-    border-radius: 5em;
-    margin: 10px;
-    margin-right: 0;
-}
-
-.UserInfo img:hover {
-    width: 200px;
-    height: 200px;
-    float: left;
-    border-radius: 1em;
-    transition: all ease-in-out 0.5s;
-    margin: 10px;
-    margin-right: 0;
-}
-
-.UserInfo img {
-    width: 100px;
-    height: 100px;
-    float: left;
-    border-radius: 5em;
-    transition: all ease-in-out 1s;
-    margin: 10px;
-    margin-right: 0;
-}
-.UserInfo p {
-    font-size: 18px;
-    margin: 0;
-}
-
-.UserInfo ul {
-    padding-left: min(20px) auto;
-}
-
-.UserInfo button {
-    margin: auto;
-    margin-right: 5px;
-    background-color:  	#FFBF00;
-    color: black;
-    font-size: 16px;
-    border: none;
-    min-width: 80px;
-    height: 90px;
-    align-items: center;
-}
-/*End of Styling for the User Info*/
-
-/*Start of Styling for the User Content*/
-
-.UserContent #Blocks {
-    display: flex;
-    float: left;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.UserContent #Blocks div{
-    width: 200px;
-    height: 400px;
-    margin: auto;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    background-color: grey;
-}
-
-.UserContent #Blocks p {
-    width: 200px;
-    height: 190px;
-
-    overflow-y: scroll;
-    text-overflow: ellipsis;
-    
-    font-size: 16px;
-    
-    margin: 0;
-}
-
-.UserContent #Blocks img {
-    width: 200px;
-    height: 200px;
-
-    margin: 0;
-}
-/*End of Styling for the User Content*/
