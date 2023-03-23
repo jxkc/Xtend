@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(252, 252, 89);
+    background-color: #FDFD96;
 }
 
 #navbar ul {
@@ -67,7 +67,7 @@ body {
     width: 200px;
     height: 400px;
     /*Can't get this working right at the moment. Can't be bothered at the moment.*/
-    margin: 1vw auto;
+    margin: 4px  2px 0 2px;
     background-color: grey;
 }
 
