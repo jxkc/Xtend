@@ -42,13 +42,7 @@ function generateBlock(blockText, imageSource){
 }
 
 
-// This is a temporary test function until I implement the actual features that I need.
-function test(amount){
-    for(var i = 0; i < amount; i++){
-        GenerateBlock(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex voluptatum quo tempore sequi numquam consectetur, unde ad rerum, ipsam quae sint sed a molestiae laboriosam eos temporibus deleniti. Facilis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex voluptatum quo tempore sequi numquam consectetur, unde ad rerum, ipsam quae sint sed a molestiae laboriosam eos temporibus deleniti. Facilis.`
-    , " ");
-    }
-}
+
 
 test(30);
 deleteBlock(Blocks[0]);

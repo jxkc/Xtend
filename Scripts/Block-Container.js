@@ -1,13 +1,20 @@
-//File to contain and manage Blocks.
+//Class to contain and manage Blocks.
 
 /**
  * Essentially a Custom Document Object Model (DOM) that acts
  * just like an Array and contains all the data for a set of Blocks.
  * It includes similar approaches to push, pop and so on.
  */
+
+import {Block} from "./Block.js"
+
 class BlockContainer extends HTMLElement {
-    constructor(){
+    constructor(element){
         this.data = new Array();
+        
+        if(element instanceof HTMLDivElement)
+            this.container = element;
+        else console.error("This is not a suitable Container.")
         super();
     }
 
@@ -27,6 +34,11 @@ class BlockContainer extends HTMLElement {
         const blockDel = document.getElementById(block_id);
         blockDel.remove();
     }
-}
 
-customElements.define("block-container", BlockContainer); 
+    append(element){
+        if(typeof(element) != Block)
+            console.error("Invalid, Element is not a block.")
+        else
+            this.container.appendChild(element);
+    }
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./style.css">
-    <script type="module" src="./Scripts/XBlock.js"></script>
+    <script type="module" src="./Scripts/Block-Container.js"></script>
     <title>Xtend - Home</title>
 </head>
     <!--Gotta add a wrapper for this and then a user section-->
@@ -23,12 +23,13 @@
         </ul>
     </div>
 
-    <button id="TestButt">Button</button>
+    <div id="Blocks"></div>
+    <script type="text/javascript">
+        //Binding to Blocks - https://www.youtube.com/watch?v=rVkSgbKgkRI (Watch after work)
+        const Blocks = document.getElementById("Blocks");
+        const BlockContainment = new BlockContainer("Blocks");
+    </script>
 
-    <!--Need to work on the CSS for this.-->
-    <div class="HomeContent">
-        <div id="Blocks"\>
-    </div>
 </body>
 
 </html>
