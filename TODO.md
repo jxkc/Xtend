@@ -1,11 +1,7 @@
 # TODO
 
-- Implement Block.js
-  - Block class (Could just be functions)
-    - UID
-    - Text
-    - Image Path
-  - Custom DOM Element
-    - Div
-      - p
-      - img
+- CSS for Blocks
+- Add a bunch of 'Example Blocks'
+- Update Blocks for different Pages
+- Make a few cool interesting things and stuff.
+- Cry :D
