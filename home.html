@@ -25,9 +25,14 @@
 
     <div id="Blocks"></div>
     <script type="text/javascript">
+        import {BlockContainer} from "./Scripts/BlockContainer.js"
+
         //Binding to Blocks - https://www.youtube.com/watch?v=rVkSgbKgkRI (Watch after work)
-        const Blocks = document.getElementById("Blocks");
-        const BlockContainment = new BlockContainer("Blocks");
+        let b = document.getElementById("Blocks");
+        let bc = new BlockContainer(b);
+
+        
+        
     </script>
 
 </body>
