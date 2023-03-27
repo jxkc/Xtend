@@ -56,7 +56,7 @@ body {
     transition: all ease-in-out 0.3s;
 }
 
-.HomeContent #Blocks {
+#Blocks {
     display: flex;
     float: left;
     justify-content: center;
@@ -65,7 +65,7 @@ body {
     flex-wrap: wrap;
 }
 
-.HomeContent #Blocks div{
+#Blocks div{
     width: 200px;
     height: 400px;
     /*Can't get this working right at the moment. Can't be bothered at the moment.*/
@@ -73,7 +73,7 @@ body {
     background-color: grey;
 }
 
-.HomeContent #Blocks p {
+#Blocks p {
     width: 200px;
     height: 190px;
     overflow-y: scroll;
@@ -82,42 +82,7 @@ body {
     margin: 0;
 }
 
-.HomeContent #Blocks img {
-    width: 200px;
-    height: 200px;
-    margin: 0;
-}
-
-.MarketContent #Blocks{
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    float: left;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.MarketContent #Blocks div{
-    width: 550px;
-    height: 200px;
-    
-    /*Can't get this working right at the moment. Can't be bothered at the moment.*/
-    margin: 2px;
-    background-color: grey;
-}
-
-.MarketContent #Blocks p {
-    float: left;
-    width: 300px;
-    height: 190px;
-    overflow-y:scroll;
-    text-overflow:clip;
-    font-size:calc(0.7vw + .5rem);
-    margin: 0;
-}
-
-.MarketContent #Blocks img {
-    float: left;
+#Blocks img {
     width: 200px;
     height: 200px;
     margin: 0;

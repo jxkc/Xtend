@@ -1,21 +1,19 @@
-import { uniqueID } from "./GenerateID";
+import { uniqueID } from "./GenerateID.js";
 
 /**
  * Custom DOM element.
  */
-export class Block extends HTMLElement {
+export class Block {
     constructor(text, img){
-        super();
+            //UID and Text.
+            this.uid = uniqueID(16);
+            this.text = text;
 
-        //UID and Text.
-        this.uid = uniqueID(16);
-        this.text = text;
-
-        //Image.
-        if(img == '' || img == ' ')
-            this.img = './Images/Xtend_NoImage.png'
-        else
-            this.img = img;
+            //Image.
+            if(img == undefined || img === " ")
+                this.img = './Images/Xtend_NoImage.png'
+            else
+                this.img = img;
     }
 
     /**

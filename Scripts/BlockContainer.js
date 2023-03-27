@@ -1,21 +1,16 @@
 //Class to contain and manage Blocks.
 
-import {Block} from "./Block"
+import {Block} from "./Block.js"
 
 /**
  * Essentially a Custom Document Object Model (DOM) that acts
  * just like an Array and contains all the data for a set of Blocks.
  * It includes similar approaches to push, pop and so on.
  */
-export class BlockContainer extends HTMLElement {
+export class BlockContainer {
     constructor(element){
         this.data = new Array();
-        
-        if(document.getElementById(element) instanceof HTMLDivElement)
-            this.container = document.getElementById(element);
-        else console.error("This is not a suitable Container.")
-        
-        super();
+        this.container = document.getElementById(element);
     }
 
     /**
@@ -23,10 +18,10 @@ export class BlockContainer extends HTMLElement {
      * @param {*} block The ID of the Block to be added.
      */
     add(block){
-        if(block !== typeof(Block))
-            console.error("This is not a Block.")
-        else
-            this.data.push(block.getID());
+        // if(block !== typeof(Block))
+        //     console.error("This is not a Block.")
+        // else
+            this.data.push(block);
     }
 
     /**
@@ -35,12 +30,7 @@ export class BlockContainer extends HTMLElement {
      */
     del(block){
         var todel; 
-
-        if(block !== typeof(Block))
-            todel = block;
-        else
-            console.error("This is not a valid Block.")
-        
+        todel = document.getElementById(block.getID());
         todel.remove();
     }
 
@@ -49,10 +39,16 @@ export class BlockContainer extends HTMLElement {
      * @param {*} block Requires a Block to be passed else returns an erorr. 
      */
     append(block){
-        if(typeof(block) !== Block)
-            console.error("Invalid, Element is not a block.")
-        else {
-            container.appendChild(block.getInner());
-        }
+        // if(typeof(block) !== Object)
+        //     console.error("Invalid, Element is not a block.")
+        // else {
+        //     container.appendChild(block.getInner());
+        // }
+
+        let b = document.createElement('div')
+        b.id = block.getID();
+        b.innerHTML = block.getInner();
+
+        this.container.appendChild(b    );
     }
 }

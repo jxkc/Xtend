@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <base href=".">
     <link rel="stylesheet" href="./style.css">
-    <script type="module" src="./Scripts/Block-Container.js"></script>
     <title>Xtend - Home</title>
+    <script src="/Scripts/Test.js" type="module"></script>
 </head>
     <!--Gotta add a wrapper for this and then a user section-->
     <!--User section should have a min width to hide or display the username...-->
@@ -24,17 +24,6 @@
     </div>
 
     <div id="Blocks"></div>
-    <script type="text/javascript">
-        import {BlockContainer} from "./Scripts/BlockContainer.js"
-
-        //Binding to Blocks - https://www.youtube.com/watch?v=rVkSgbKgkRI (Watch after work)
-        let b = document.getElementById("Blocks");
-        let bc = new BlockContainer(b);
-
-        
-        
-    </script>
-
 </body>
 
 </html>
