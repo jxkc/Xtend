@@ -39,12 +39,6 @@ export class BlockContainer {
      * @param {*} block Requires a Block to be passed else returns an erorr. 
      */
     append(block){
-        // if(typeof(block) !== Object)
-        //     console.error("Invalid, Element is not a block.")
-        // else {
-        //     container.appendChild(block.getInner());
-        // }
-
         let b = document.createElement('div')
         b.id = block.getID();
         b.innerHTML = block.getInner();

@@ -71,15 +71,18 @@ body {
     /*Can't get this working right at the moment. Can't be bothered at the moment.*/
     margin: 5px;
     background-color: grey;
+    
 }
 
 #Blocks p {
     width: 200px;
     height: 190px;
-    overflow-y: scroll;
-    text-overflow: ellipsis;
+    overflow-y:scroll;
+    text-overflow: hidden;
     font-size: 16px;
     margin: 0;
+    
+    scrollbar-color: black;
 }
 
 #Blocks img {
