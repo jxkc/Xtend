@@ -17,7 +17,6 @@ export class Block {
     }
 
     /**
-     * 
      * @returns The ID of the Block.
      */
     getID(){
@@ -25,13 +24,30 @@ export class Block {
     }
 
     /**
-     * 
-     * @returns Returns the InnerHTML.
+     * @returns Returns the InnerHTML of the Block.
      */
     getInner(){
         const inn = `
             <img src="${this.img}">
             <p>${this.text}</p>
+        `;
+        return inn;
+    }
+}
+
+export class MarketBlock extends Block{
+    constructor(text, img){
+        super();
+    }
+
+    /**
+     * @returns Retunrs the InnerHTML for the Market Block.
+     */
+    getInner(){
+        const inn = `
+            <img src="${this.img}">
+            <p>${this.text}</p>
+            <button>+</button>
         `;
         return inn;
     }

@@ -1,6 +1,6 @@
 //Class to contain and manage Blocks.
 
-import {Block} from "./Block.js"
+import {Block, MarketBlock} from "./Block.js"
 
 /**
  * Essentially a Custom Document Object Model (DOM) that acts
@@ -39,10 +39,16 @@ export class BlockContainer {
      * @param {*} block Requires a Block to be passed else returns an erorr. 
      */
     append(block){
+        if(block instanceof MarketBlock){
+            console.log("Market Block")
+        } else if(block instanceof Block){
+            console.log("Block")
+        }
+
         let b = document.createElement('div')
         b.id = block.getID();
         b.innerHTML = block.getInner();
 
-        this.container.appendChild(b    );
+        this.container.appendChild(block);
     }
 }
