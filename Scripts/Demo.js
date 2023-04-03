@@ -41,7 +41,24 @@ function market(){
  * Generates blocks for the support page!
  */
 function support(){
+    let mC = new BlockContainer("SupportBlocks");
+    let m = new Array();
 
+    //pushes some data to 'b'
+    for(var i = 0; i < 10; i++){
+        m.push(new Block("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, tempora quidem. Dolore magni, sunt commodi enim ipsum quo voluptas ratione nesciunt aliquid consequatur, vitae voluptates nobis, fuga voluptatem ea quam!", " "))
+    }
+
+    //appends the data to 'b'
+    for(var i = 0; i < m.length; i++){
+        mC.append(m[i])  
+    }
 }
 
-market();
+if ( document.URL.includes("home.html") ) {
+    home()
+} else if ( document.URL.includes("market.html")) {
+    market()
+} else {
+    support()
+}

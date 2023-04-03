@@ -90,6 +90,15 @@ body {
     margin: 0;
 }
 
+#MarketBlocks {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
 #MarketBlocks div{
     width: 400px;
     height: 200px;
@@ -98,6 +107,7 @@ body {
     background-color: grey;
 
     display: flex;
+    transition: all ease-in-out 0.4s;   
 }
 
 #MarketBlocks p {
@@ -123,43 +133,130 @@ body {
     flex: auto;
     background-color: transparent;
     border: none;
-    font-size: 8vw;
+    font-size: 2vw;
     color: transparent;
+    transition: all ease-in-out 0.4s;   
+}
+
+#MarketBlocks div:hover {
+    width: 450px;
     transition: all ease-in-out 0.4s;   
 }
 
 #MarketBlocks button:hover {
     width: 50px;
     display: block;
-    background-color: aquamarine;
+    background-color: #5fd76d;
     color: black;
     transition: all ease-in-out 0.3s;
 }
+
+#SupportBlocks {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#SupportBlocks div{
+    width: 200px;
+    height: 400px;
+    /*Can't get this working right at the moment. Can't be bothered at the moment.*/
+    margin: 5px;
+    background-color: grey;
+    
+}
+
+#SupportBlocks p {
+    width: 200px;
+    height: 190px;
+    overflow-y:scroll;
+    text-overflow: hidden;
+    font-size: 16px;
+    margin: 0;
+    
+    scrollbar-color: black;
+}
+
+#SupportBlocks img {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 63, 63);
+    
+    text-decoration: solid;
+
+    font-size: 4vw;
+    margin: 0;
+    height: auto;
+}
 /*FOR IF THE PAGE GETS SMALL, LIKE A SAMSUNG S10/S10+*/
 @media (max-device-width: 600px)   {
-    .MarketContent {
+    #MarketBlocks {
+        display: flex;
+        float: left;
         justify-content: center;
-        align-items: center;
-        float: none;
+        align-items:flex-start;
+        flex-direction: row;
+        flex-wrap: wrap; 
     }
-
-    .MarketContent #Blocks div{
-        width: 300px;
-        height: 100px;
+    
+    #MarketBlocks div{
+        width: 320px;
+        height: 150px;
         /*Can't get this working right at the moment. Can't be bothered at the moment.*/
-        margin: 2px;
+        margin: 5px;
         background-color: grey;
+    
+        display: flex;
+        transition: all ease-in-out 0.4s;   
     }
-
-    .MarketContent #Blocks img {
-        width: 100px;
-        height: 100px;
+    
+    #MarketBlocks p {
+        width: 120px;
+        height: 190px;
+        overflow-y:scroll;
+        text-overflow: hidden;
+        font-size: 10px;
         margin: 0;
+        
+        scrollbar-color: black;
     }
-
-    .MarketContent #Blocks p {
+    
+    #MarketBlocks img {
         width: 150px;
-        height: 100px;
+        height: 150px;
         margin: 0;
+        float: left;
+    }
+    
+    #MarketBlocks button {
+        width: 0px;
+        background-color: transparent;
+        border: none;
+        font-size: 4vw;
+        color: transparent;
+        transition: all ease-in-out 0.4s;   
+    }
+    
+    #MarketBlocks div:hover {
+        width: 350px;
+        transition: all ease-in-out 0.4s;   
+    }
+    
+    #MarketBlocks button:hover {
+        display: block;
+        flex: 10px;
+        background-color: #5fd76d;
+        color: black;
+        transition: all ease-in-out 0.3s;
     }
 }
