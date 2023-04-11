@@ -186,7 +186,7 @@ body {
     margin: 0;
 }
 
-h2 {
+.SupportForm h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,6 +197,46 @@ h2 {
     font-size: 4vw;
     margin: 0;
     height: auto;
+}
+
+.SupportForm h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+
+    text-decoration: underline;
+    
+    text-decoration: solid;
+
+    font-size: 3vw;
+    margin: 0;
+    height: auto;
+}
+
+.SupportForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: gray;
+}
+
+.SupportForm input[type=text], label {
+    margin: auto;
+    padding: 12px;
+    font-size: calc(0.8vw + 0.5rem);
+}
+
+.SupportForm input[type=submit] {
+    padding: 12px;
+    background-color: red;
+    border: 0;
+    margin: 4px;
 }
 /*FOR IF THE PAGE GETS SMALL, LIKE A SAMSUNG S10/S10+*/
 @media (max-device-width: 600px)   {
