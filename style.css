@@ -15,7 +15,7 @@ body {
 
 #HomeHeader {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -23,7 +23,7 @@ body {
     
     color: white;
     background-color: rgb(215, 63, 63);
-    font-size: calc(10vw + 0.5rem);
+    font-size: calc(8vw + 0.5rem);
 }
 
 #NavBar {
@@ -151,6 +151,39 @@ body {
     transition: all ease-in-out 0.3s;
 }
 
+.Settings {
+    display: flex;
+    flex-direction: column;
+    float: left;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.Settings form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: gray;
+}
+
+.SupportForm input[type=text], label {
+    margin: auto;
+    padding: 12px;
+    font-size: calc(0.8vw + 0.5rem);
+}
+
+.SupportForm input[type=submit] {
+    padding: 12px;
+    background-color: red;
+    border: 0;
+    margin: 4px;
+}
+
 #SupportBlocks {
     display: flex;
     float: left;
@@ -238,6 +271,27 @@ body {
     border: 0;
     margin: 4px;
 }
+
+.User {
+    text-align: center;
+    font-size: calc(1vw + 0.5rem);
+}
+
+.User img {
+    width: 80PX;
+}
+
+.User ul, img {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.User a, p {
+    margin: 0;
+    text-decoration: none;
+}
+
 /*FOR IF THE PAGE GETS SMALL, LIKE A SAMSUNG S10/S10+*/
 @media (max-device-width: 600px)   {
     #MarketBlocks {
