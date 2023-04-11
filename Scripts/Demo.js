@@ -55,7 +55,7 @@ function support(){
     }
 }
 
-if ( document.URL.includes("home.html") ) {
+if ( document.URL.includes("home.html") || document.URL.includes("user.html")) {
     home()
 } else if ( document.URL.includes("market.html")) {
     market()
