@@ -49,6 +49,6 @@ export class BlockContainer {
         b.id = block.getID();
         b.innerHTML = block.getInner();
 
-        this.container.appendChild(block);
+        this.container.appendChild(b);
     }
 }
